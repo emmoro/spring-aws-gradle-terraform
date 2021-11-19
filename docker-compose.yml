@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  app-aws-terraform:
+    image: emmoro/app-aws-terraform:v1
+    container_name: app-aws-terraform
+    ports:
+      - "8180:8180"
+    build:
+      context: ./
+      dockerfile: Dockerfile
